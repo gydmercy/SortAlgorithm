@@ -21,6 +21,6 @@ def BInsert_sort(array):
                 left = mid + 1
         # 上述循环结束之时，一定是 right + 1 == left，该 left 的位置即为插入点
         # 插入点及之后的元素位置后移
-        for j in range(i, left - 1, -1):
+        for j in range(i, left, -1):
             array[j] = array[j - 1]
         array[left] = value
